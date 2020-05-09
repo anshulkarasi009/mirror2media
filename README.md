@@ -11,3 +11,6 @@ pip install -r requirement.txt
 ```
 python twitter_scrapper.py
 ```
+
+## Acknowledgments
+* https://github.com/taspinar/twitterscraper

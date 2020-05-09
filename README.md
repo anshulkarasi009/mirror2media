@@ -4,11 +4,12 @@ Platform using NLP techniques to get the insights of famous journalists and medi
 ## Getting Started
 * Install Pthon 3.7+ in your virtual environment
 
-```
+
 ### To Scrap Tweets
 * Install Dependencies
 ```
 pip install -r requirement.txt
+```
 * Go to the folder scrap-tweets
 ```
 cd scrap-tweets

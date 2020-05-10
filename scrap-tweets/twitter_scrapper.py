@@ -41,14 +41,15 @@ def query_tweets_from_user(user, limit=None):
 def get_user_tweets(user):
     try:
         #do something
-        origin_date=dt.date(2006, 3, 21)
-        end_date = dt.date.today()
-        #end_date = dt.date(2014,9,9) # This is for when you want to resume from a certain date
+        #origin_date=dt.date(2006, 3, 21)
+        origin_date=dt.date(2015, 4, 1)
+        #end_date = dt.date.today()
+        end_date = dt.date(2017,12,17) # This is for when you want to resume from a certain date
         timedelta=dt.timedelta(days=7)
         start_date = end_date-timedelta
         query = 'from:'+user
         tweets=[]
-        counter=0
+        counter=1
         while(start_date>=origin_date):
             new_tweets= query_tweets(query, begindate=start_date, enddate=end_date)
             if(len(new_tweets)>0):
@@ -96,6 +97,6 @@ def remove_url_from_text(text):
     t = get_url_from_text(text)
     return text.replace(t,'')
 
-get_user_tweets('realDonaldTrump')
+get_user_tweets('RahulGandhi')
 
 #get_user_info()

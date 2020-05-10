@@ -12,7 +12,7 @@ cd scrap-tweets
 ```
 * Install Dependencies
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 * Run Script after changing the hard coded twitter handle in the function call. It will write twitter data to csv files after every 2000+ tweets. Search Range is from 2006-3-21 till current date. 
 ```
